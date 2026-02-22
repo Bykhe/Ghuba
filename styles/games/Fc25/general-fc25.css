@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 100px 100px;
+    background-color: rgb(16, 16, 20);
+}
+
+p  {
+    font-family: League Spartan, Arial;
+    color: rgb(256, 256, 256);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}

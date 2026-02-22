@@ -1,0 +1,142 @@
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.video-grid {
+    font-family: League Spartan, Arial;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.video-preview-link {
+    width: 100%;
+}
+
+.video-preview {
+    background-color: var(--game-preview-color);
+    width: 100%;
+    height: 100%;
+    transition: transform  0.3s ease;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.video-preview:hover {
+    transform: scale(1.03);
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+    height: 100%;
+}
+
+.thumbnail {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.video-title {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+
+.video-stats, .video-author {
+    font-size: 12px;
+    color: gray;
+    font-weight: 400;
+}
+
+.video-author {
+    margin-bottom: 4px;
+}
+
+.video-info-grid {
+    display: flex;
+    flex-flow: row nowrap;
+
+    height: 100%;
+}
+
+.video-info {
+    flex: 1;
+    align-content: center;
+}
+
+
+.profile-picture {
+    width: 35px;
+    border-radius: 50%;
+}
+
+@media (min-width: 1125px) {
+    .video-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 860px) and (max-width: 1300px) {
+    .video-grid {
+        grid-template-columns: repeat(3, 1fr);
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 950px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+        overflow: hidden;
+    }
+}
+
+.channel-picture {
+    max-width: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.video-time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 5px;
+    box-sizing: content-box;
+}
+
+.sale{
+    align-items: center;
+    background-color: #000;
+}
+
+.sale-price {
+    border-radius: 15px;
+    font-size: 12px;
+    background-color: var(--button-color-yellow);
+    color: #000;
+    width: 40px;
+    text-align: center;
+    padding: 4px 2px;
+    margin-top: 5px;
+}
+

@@ -1,0 +1,34 @@
+:root {
+    --main-color: #0F0F0F;
+    --game-preview-color: #1D1D1D;
+    --button-color-yellow: #FFA800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 80px 50px 20px 0;
+    background-color: var(--main-color);
+}
+
+.main__container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+p  {
+    font-family: League Spartan, Arial;
+    color: #fff;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
