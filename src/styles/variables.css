@@ -3,7 +3,7 @@
     --secondary-color: #ffffff;
     --soft-black: #121212;
     --soft-withe: #fefefe;
-    --superficial-black: #2f2f2f;
+    --superficial-black: #1d1d1d;
 
     /* dark theme */
     --bg-color: var(--soft-black);
@@ -26,10 +26,6 @@ body {
     background-color: var(--bg-color);
 }
 
-.main__container {
-    
-}
-
 p  {
     font-family: League Spartan, Arial;
     color: #fff;
@@ -38,4 +34,15 @@ p  {
 
 a {
     text-decoration: none;
+    color: #fefefe;
+}
+
+.material-symbols-outlined {
+    display: inline-block; /* Asegura que ocupe espacio */
+    font-size: 24px;       /* Tamaño estándar */
+    color: #333;           /* Color visible (oscuro) */
+}
+
+header .left-seaction .material-symbols-outlined {
+    color: #fefefe;
 }
