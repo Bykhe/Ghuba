@@ -121,14 +121,21 @@ main section {
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 auto;
-    width: 95%;
+    width: 90%;
     row-gap: 20px;
+    column-gap: 20px;
 }
 
 .card {
+    padding: ;
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.card:hover {
+    border-radius: 20px;
+    background-color: var(--superficial-black);
 }
 
 .card__link {
@@ -192,17 +199,20 @@ main section {
     color: #ababab;
 }
 
+/* Footer */
 
-
-
-
-
+footer {
+    height: 100px;
+    margin-top: 40px;
+    background-color: var(--superficial-black);
+}
 
 
 
 
 @media (min-width: 1125px) {
     .video-grid {
+        width: 100%;
         grid-template-columns: repeat(4, 1fr);
     }
 }
