@@ -19,7 +19,6 @@ header .right-section {
 }
 
 header .right-section {
-    display: none;
     align-items: center;
     width: clamp(250px, 100%, 300px);
 }
@@ -116,12 +115,63 @@ header .voice-search-btn {
 }
 
 /* MAIN */
+main {
+    position: relative;
+    display: flex;
+}
 
+/* SIDEBAR */
+.sidebar {
+    display: none;
+    position: sticky;
+    padding: 4px;
+    top: 0;
+    left: 0;
+    
+    width: 75px;
+}
+
+.sidebar__nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.sidebar__link {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+
+    transition: background 0.3s ease;
+}
+
+.sidebar__link:hover {
+    background-color: rgba(255, 168, 0, 0.5);
+    
+}
+
+.sidebar__icon {
+    width: 28px;
+}
+
+.sidebar__label {
+    font-size: 10px;
+}
+
+
+/* VIDEO GRID */
 main section {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0 auto;
-    width: 90%;
+    margin: 0px 16px;
+    padding-top: 24px;
+    width: 100%;
     row-gap: 20px;
     column-gap: 20px;
 }
@@ -206,35 +256,34 @@ footer {
     background-color: var(--superficial-black);
 }
 
-
-
-
-@media (min-width: 1125px) {
-    .video-grid {
-        width: 100%;
-        grid-template-columns: repeat(4, 1fr);
+@media (min-width: 790px) {
+    .sidebar {
+        display: inline;
     }
 }
 
-@media (min-width: 860px) and (max-width: 1300px) {
-    .video-grid {
-        grid-template-columns: repeat(3, 1fr);
-        overflow: hidden;
-    }
-}
-
-@media (min-width: 700px) and (max-width: 950px) {
+@media (min-width: 587px) and (max-width: 975px) {
     .video-grid {
         grid-template-columns: repeat(2, 1fr);
         overflow: hidden;
     }
 }
 
-@media (max-width: 750px) {
-    
-    .sidebar {
-        display: none;
+@media (min-width: 976px) and (max-width: 1823px) {
+    .video-grid {
+        grid-template-columns: repeat(3, 1fr);
+        overflow: hidden;
     }
 }
+
+@media (min-width: 1825px) {
+    .video-grid {
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
 
 
