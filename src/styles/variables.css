@@ -4,8 +4,8 @@
     --primary-color: #000000;
     --secondary-color: #ffffff;
     --soft-black: #121212;
-    --soft-white: #fefefe;
-    --superficial-black: #262626;
+    --soft-white: #e0e0e0;
+    --superficial-black: #1e1e1e;
 
     /* dark theme */
     --bg-color: var(--soft-black);
@@ -43,5 +43,6 @@ a {
 .material-symbols-outlined {
     display: inline-block; /* Asegura que ocupe espacio */
     font-size: 24px;       /* Tamaño estándar */
-    color: var(--soft-white);           /* Color visible (oscuro) */
+    color: var(--soft-white);
+    fill: #e0e0e0;
 }
