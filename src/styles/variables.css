@@ -4,12 +4,12 @@
     --primary-color: #000000;
     --secondary-color: #ffffff;
     --soft-black: #121212;
-    --soft-withe: #fefefe;
+    --soft-white: #fefefe;
     --superficial-black: #262626;
 
     /* dark theme */
     --bg-color: var(--soft-black);
-    --main-text: var(--soft-withe);
+    --main-text: var(--soft-white);
 
 
     /* btn styles */
@@ -31,21 +31,17 @@ body {
 
 p  {
     font-family: League Spartan, Arial;
-    color: #fff;
+    color: var(--main-text);
     margin: 0;
 }
 
 a {
     text-decoration: none;
-    color: #fefefe;
+    color: var(--main-text);
 }
 
 .material-symbols-outlined {
     display: inline-block; /* Asegura que ocupe espacio */
     font-size: 24px;       /* Tamaño estándar */
-    color: #333;           /* Color visible (oscuro) */
-}
-
-header .left-seaction .material-symbols-outlined {
-    color: #fefefe;
+    color: var(--soft-white);           /* Color visible (oscuro) */
 }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ghubame</title>
+  <title>Hugame</title>
   <link rel="stylesheet" href="./styles/variables.css" />
   <link rel="stylesheet" href="./styles/layer.css" />
 
@@ -21,14 +21,16 @@
 
 <body>
   <header>
-    <div class="left-section">
+    <div class="header__left">
       <button class="menu-btn">
-        <span class="material-symbols-outlined" style="color: var(--soft-black);">menu</span>
+        <span class="material-symbols-outlined">menu</span>
       </button>
-      <img class="logo" src="./assets/icons/palma.png" />
-      <h1>Ghubame</h1>
+      <svg class="logo" viewBox="0 0 39 39" fill="#fefefe" width="40px" style="margin-left: 10px;">
+        <path d="M39 24H24V6H6V24H24V39H0V6H6V0H39V24Z" />
+      </svg>
+      <h1 class="header__title">Hugame</h1>
     </div>
-    <div class="middle-section">
+    <div class="header__middle">
       <form action="/buscar" method="GET">
         <input class="search-bar" type="search" list="suggested-search" name="q" placeholder="Search">
         <datalist id="suggested-search">
@@ -47,21 +49,19 @@
         <span class="material-symbols-outlined" style="color: var(--soft-black);">mic</span>
       </button>
     </div>
-    <div class="right-section">
-      <div class="upload-icon-container">
-        <img class="upload-icon" src="/assets/icons/language.svg" />
-        <div class="notifications-count">3</div>
-        <div class="tooltip">Language</div>
+    <div class="header__right">
+      <div class="nav__item">
+        <img class="nav__item-icon" src="./assets/icons/language.svg" />
+        <span class="nav__item-badge">3</span>
+        <span class="nav__item-tooltip">Language</span>
       </div>
-      <div class="upload-login-container">
-        <button class="Login-button">
-          <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">Login</a>
-        </button>
-        <div class="tooltip">login</div>
+
+      <div class="nav__item">
+          <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank" class="btn nav__item-login">Login</a>
       </div>
-      <div class="upload-icon-container" class="notification-icon-container">
-        <button class="download-button">Download</button>
-        <div class="tooltip">Download</div>
+
+      <div class="nav__item">
+        <button class="btn nav__item-download">Download</button>
       </div>
     </div>
   </header>
@@ -99,7 +99,7 @@
 
       <article class="card">
         <div class="card__header">
-          <a class="card__link" href="./pages/Fc25-Compra.html">
+          <a class="card__link" href="./pages/games/Fc25-Compra.html">
             <img class="card__thumb" src="./assets/img/thumbnails/ea-fc25.jpg" />
             <span class="card__price">$75,81 NZ</span>
           </a>
@@ -119,7 +119,7 @@
       <article class="card">
         <div class="card__header">
           <a class="card__link" href="./pages/Fc25-Compra.html">
-            <img class="card__thumb" src="./assets/img/thumbnails/red-dead-2.jpg" />
+            <img class="card__thumb" src="./assets/img/thumbnails/red-dead-redemption-II.jpg" />
             <span class="card__price">$75,81 NZ</span>
           </a>
         </div>
@@ -206,6 +206,78 @@
           <div class="card__info">
             <h3 class="card__title">Amazing Spider Man II</h3>
             <p class="card__author">PlayStation</p>
+            <p class="card__meta">Vistas de 3.4M &#183; Hace 6 meses</p>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__header">
+          <a class="card__link" href="./pages/Fc25-Compra.html">
+            <img class="card__thumb" src="./assets/img/thumbnails/the-last-of-us-part-2-remastered.jpg" />
+            <span class="card__price">$75,81 NZ</span>
+          </a>
+        </div>
+        <div class="card__body">
+          <div class="card__brand">
+            <img class="card__logo" src="./assets/img/video-game-logos/Rockstar_logo_for_tweets.png" />
+          </div>
+          <div class="card__info">
+            <h3 class="card__title">The Last Of Us Part II (Remastered)</h3>
+            <p class="card__author">RockStar Games</p>
+            <p class="card__meta">Vistas de 3.4M &#183; Hace 6 meses</p>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__header">
+          <a class="card__link" href="./pages/Fc25-Compra.html">
+            <img class="card__thumb" src="./assets/img/thumbnails/ea-madden25.jpg" />
+            <span class="card__price">$75,81 NZ</span>
+          </a>
+        </div>
+        <div class="card__body">
+          <div class="card__brand">
+            <img class="card__logo" src="./assets/img/video-game-logos/Electronic-Arts-Logo.svg" />
+          </div>
+          <div class="card__info">
+            <h3 class="card__title">EA Madden 25</h3>
+            <p class="card__author">Electronic Arts</p>
+            <p class="card__meta">Vistas de 3.4M &#183; Hace 6 meses</p>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__header">
+          <a class="card__link" href="./pages/Fc25-Compra.html">
+            <img class="card__thumb" src="./assets/img/thumbnails/cyberpunk-2077.jpg" />
+            <span class="card__price">$75,81 NZ</span>
+          </a>
+        </div>
+        <div class="card__body">
+          <div class="card__brand">
+            <img class="card__logo" src="./assets/img/video-game-logos/CD-project.png" />
+          </div>
+          <div class="card__info">
+            <h3 class="card__title">Cyberpunk 2077</h3>
+            <p class="card__author">CD Project</p>
+            <p class="card__meta">Vistas de 3.4M &#183; Hace 6 meses</p>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__header">
+          <a class="card__link" href="./pages/Fc25-Compra.html">
+            <img class="card__thumb" src="./assets/img/thumbnails/Grand-theft-auto-5-online.jpg" />
+            <span class="card__price">$75,81 NZ</span>
+          </a>
+        </div>
+        <div class="card__body">
+          <div class="card__brand">
+            <img class="card__logo" src="./assets/img/video-game-logos/Rockstar_logo_for_tweets.png" />
+          </div>
+          <div class="card__info">
+            <h3 class="card__title">A Safehouse in the Hills</h3>
+            <p class="card__author">RockStar Games</p>
             <p class="card__meta">Vistas de 3.4M &#183; Hace 6 meses</p>
           </div>
         </div>
