@@ -4,10 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>WaxPalm.com</title>
-        <link rel="stylesheet" href="../src/styles/games/Rdr2/general-Rdr2.css" />
-        <link rel="stylesheet" href="../src/styles/games/Rdr2/header-Rdr2.css" />
-        <link rel="stylesheet" href="../src/styles/games/Rdr2/sidebar-Rdr2.css" />
-        <link rel="stylesheet" href="../src/styles/games/Rdr2/video-Rdr2.css" />
+        <link rel="stylesheet" href="/src/styles/games/rdr2/general-Rdr2.css" />
+        <link rel="stylesheet" href="/src/styles/games/rdr2/header-Rdr2.css" />
+        <link rel="stylesheet" href="/src/styles/games/rdr2/sidebar-Rdr2.css" />
+        <link rel="stylesheet" href="/src/styles/games/rdr2/video-Rdr2.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -16,55 +16,53 @@
         />
     </head>
     <body>
-        <header class="header">
-            <div class="left-section">
-                <a class="arrow-back" href="/Index.html">
-                    <img
-                        src="/assets/icons/arrow_back_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg"
-                    />
-                </a>
-                <img class="waxpalm-logo" src="/assets/icons/palma.png" />
+        <header>
+            <div class="header__left">
+              <button class="menu-btn">
+                <span class="material-symbols-outlined">menu</span>
+              </button>
+              <a href="/src/Index.html">
+                <svg class="logo" viewBox="0 0 39 39" fill="#fefefe" width="35px">
+                  <path d="M39 24H24V6H6V24H24V39H0V6H6V0H39V24Z" />
+                </svg>
+                <h1 class="header__title">Hugame</h1>
+              </a>
             </div>
-            <div class="middle-section">
-                <input class="search-bar" type="search" placeholder="Search" />
-                <button class="search-button">
-                    <img class="search-icon" src="assets/search.svg" />
-                    <div class="tooltip">Search</div>
+            <div class="header__middle">
+              <form action="/buscar" method="GET">
+                <input class="search-bar" type="search" list="suggested-search" name="q" placeholder="Search">
+                <datalist id="suggested-search">
+                  <option value="EA FC 26"></option>
+                  <option value="Red Dead Redemption 2"></option>
+                  <option value="Amazing Spider Man 2"></option>
+                  <option value="God of War Ragnarok"></option>
+                  <option value="Need for Speed Unbound"></option>
+                  <option value="Forza Horizon 5"></option>
+                </datalist>
+                <button class="search-btn" type="submit">
+                  <span class="material-symbols-outlined">search</span>
                 </button>
-                <button class="voice-search-button">
-                    <img class="voice-icon" src="assets/voice-search-icon.svg" />
-                    <div class="tooltip">Search whith your voice</div>
-                </button>
+              </form>
+              <button class="voice-search-btn">
+                <span class="material-symbols-outlined">mic</span>
+              </button>
             </div>
-            <div class="right-section">
-                <div class="upload-icon-container">
-                    <img class="upload-icon" src="/assets/icons/upload.svg" />
-                    <div class="tooltip">Create</div>
-                </div>
-                <div class="upload-icon-container">
-                    <img class="upload-icon" src="/assets/icons/youtube-apps.svg" />
-                    <div class="tooltip">apps</div>
-                </div>
-                <div
-                    class="upload-icon-container"
-                    class="notification-icon-container"
-                >
-                    <img
-                        class="notifications-icon"
-                        src="/assets/icons/notifications.svg"
-                    />
-                    <div class="notifications-count">3</div>
-                    <div class="tooltip">Notificacions</div>
-                </div>
-                <div class="upload-icon-container">
-                    <img
-                        class="current-user-picture"
-                        src="/assets/video-game-logos/Rockstar_logo_for_tweets.png"
-                    />
-                    <div class="tooltip">picture</div>
-                </div>
+            <div class="header__right">
+              <div class="nav__item">
+                <img class="nav__item-icon" src="./assets/icons/language.svg" />
+                <span class="nav__item-badge">3</span>
+                <span class="nav__item-tooltip">Language</span>
+              </div>
+        
+              <div class="nav__item">
+                  <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank" class="btn nav__item-login">Login</a>
+              </div>
+        
+              <div class="nav__item">
+                <button class="btn nav__item-download">Download</button>
+              </div>
             </div>
-        </header>
+          </header>
         <main>
             <section class="video-grid">
                 <div class="video-preview">
@@ -81,7 +79,7 @@
                     </div>
                     <div class="video-buy-row">
                         <div class="video-container">
-                            <video autoplay controls class="video-buy" src="/assets/videos/Red Dead Redemp Rockstar Games.mp4"
+                            <video autoplay controls class="video-buy" src="/src/assets/videos/Red Dead Redemp Rockstar Games.mp4"
                             ></video>
                         </div>
                     </div>
