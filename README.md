@@ -1,2 +1,2 @@
-# TGBlock
+# TGBlog
 just a school proyect
